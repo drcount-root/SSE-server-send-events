@@ -12,6 +12,7 @@
       const eventSource = new EventSource("http://localhost:8000");
 
       eventSource.onmessage = function (event) {
+        console.log("EventSource event", event);
         const sseData = document.getElementById("sse-data");
         sseData.innerHTML += `Event received: ${event.data}<br>`;
       };

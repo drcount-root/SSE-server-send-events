@@ -24,6 +24,8 @@ const server = http.createServer((req, res) => {
   }, 25000);
 });
 
-server.listen(8000, () => {
-  console.log("Server listening on port 8000");
+const PORT = 8000;
+
+server.listen(PORT, () => {
+  console.log(`Server url: http://localhost:${PORT}`);
 });
