@@ -23,3 +23,6 @@ The frontend application will connect the endpoint /dashboard to receive updates
 >5. `/backend$ npm install --save-dev @types/express @types/cors`
 >#### Backend Start up guide
 >6. `/backend$ npx ts-node src/app.ts`
+>#### Setup autorun continuous watch on file changes using nodemon
+>7. `/backend$ npm install --save-dev nodemon`
+>8. Add this to `package.json` "scripts" `"start": "nodemon --watch 'src/**/*.ts' --exec npx ts-node src/app.ts --delay 200ms"`
