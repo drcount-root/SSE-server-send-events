@@ -50,7 +50,7 @@ app.post("/donate", (req, res) => {
     donation.user += 1;
   }
 
-  return res.json({ message: "Thank you for the donation! 😊" });
+  return res.json({ statusCode: 200 , message: "Thank you for the donation! 😊" });
 });
 
 app.listen(PORT, () => {
